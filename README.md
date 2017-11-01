@@ -33,32 +33,32 @@ That's it! You're ready to make your website swanky.
 ### TODO 1: Create Another Container div
 First, find the div with the class 'container' in the HTML of your `index.html` file. It should look something like this:
 ```HTML
-  <div class="container">
-     <div class="sidebar">
-        <img src="http://ventureforamerica.org/wp-content/uploads/Magdalene-McArthur-e1470163838324-500x500.jpg">
-     </div>
+    <main>
+        <div class="sidebar">
+            <img src="cactus.jpeg">
+        </div>
            
-     <div class="personal-content">
-       <header>Magdalene McArthur</header>
-         <p>Instructor at Operation Spark</p>
-           <section class="interests">
-             <header>Interests</header>
-               <ul>
-                 <li>Traveling</li>
-                 <li>Reading</li>
-                 <li>Cooking</li>
-                 <li>Cooking</li>
-               </ul>
-           </section>
-      </div>
-    </div>
+        <div class="content">
+            <header>Ben Spector</header>
+            <p>Instructor at Operation Spark</p>
+            <section class="interests">
+                <header>Interests</header>
+                <ul>
+                    <li>Traveling</li>
+                    <li>Reading</li>
+                    <li>Cooking</li>
+                    <li>Cooking</li>
+                </ul>
+            </section>
+        </div>
+    </main>
 ```
-Once you've found it, we're going to create a *new* container div right beneath it. Right below the closing `</div>` tag, create a new `<div>` with the class `container2` like so:
+Once you've found it, we're going to create a *new* main right beneath it. Right below the closing `</main>` tag, create a new `<main>` with the class `container2` like so:
 
 ```HTML
-<div class="container2">
+<main class="container2">
   
-</div>
+</main>
 ```
 
 ### TODO 2: Create a Professional Content div
@@ -66,43 +66,43 @@ Awesome! Now that you've created your container div, we're going to create anoth
 
 Inside the `container2` div, create another `<div>` with the class `professional-content` like so:
 ```HTML
-<div class="container2">
+<main class="container2">
   <div class="professional-content">
   
   </div>
-</div>
+</main>
 ```
 ### TODO 3: Add HTML Elements
 Now, the fun begins. We've structured out our divs, so now it's time to add some content. Add the following to your `professional-content` div:
 
 1. Create a `<header>` tag that will read `Professional Interests`
-2. Create a `<section>` tag with the class `intrests`
-3. Create a `<button>` tag. The button should say `use me to see my professional intrests`
+2. Create a `<section>` tag with the class `interests`
+3. Create a `<button>` tag. The button should say `use me to see my professional interests`
 4. Create an `unordered list` of three professional interests you have. They can be programming languages you're interested in learning, fields of study you're considering for college, or careers you're interested in.
 
 Your end result should look something like this (don't copy this code, just use as a reference):
 ```HTML
-  <div class="container2">
+<div class="container2">
     <div class="professional-content">
-      <header>Professional Interests</header>
+        <header>Professional Interests</header>
         <section class="interests">
-          <button>Use me to see my professional intrests</button>
+            <button>Use me to see my professional intrests</button>
             <ul class="professional-interests">
-              <li>JavaScript Web Development</li>
-              <li>Data Science</li>
-              <li>Analyzing data using Python</li>
+                <li>JavaScript Web Development</li>
+                <li>Data Science</li>
+                <li>Analyzing data using Python</li>
             </ul>
         </section>
-     </div>
-  </div>
+    </div>
+</div>
 ```
 
 ### TODO 4: Style Your New Section with CSS
 Now that your elements are created, it's time to add some styling to them in CSS. The container div that you just created should have all of the exact same styling rules as the first container div.
 
-1. Find the CSS selector for the original container `<div>` and all the elements within it.
-2. Create a new selector for the `container2` `<div>` and all of the elements within it.
-3. Mimic the style rules from the first container so that the new section we created looks just like it!
+1. Find the CSS selector for the original`<main>` and any sub-elements
+2. Create a new selector for the `class="container2"` `<main>` and all it's sub-elements
+3. Mimic the style rules from the first main so that the new section we created looks just like it!
 
 ### TODO 5: Import jQuery
 Now that we've created our HTML elements, it's time to start adding some jQuery to our page.
