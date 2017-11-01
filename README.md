@@ -86,7 +86,7 @@ Your end result should look something like this (don't copy this code, just use 
     <div class="professional-content">
         <header>Professional Interests</header>
         <section class="interests">
-            <button>Use me to see my professional intrests</button>
+            <button>Use me to see my professional interests</button>
             <ul class="professional-interests">
                 <li>JavaScript Web Development</li>
                 <li>Data Science</li>
