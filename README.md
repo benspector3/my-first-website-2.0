@@ -31,7 +31,7 @@ That's it! You're ready to make your website swanky.
 ## Lesson Steps
 
 ### TODO 1: Create Another Container div
-First, find the div with the class 'container' in the HTML of your `index.html` file. It should look something like this:
+First, find the <main> tag in the HTML of your `index.html` file. It should look something like this:
 ```HTML
     <main>
         <div class="sidebar">
