@@ -8,7 +8,7 @@ Using jQuery to add interactivity to your first-website project.
   - [Setup](#setup)
     - [Revisiting your First Website](#revisiting-your-first-website)
   - [Lesson Steps](#lesson-steps)
-    - [TODO 1 : Create Another Container div](#todo-1--create-another-container-div)
+    - [TODO 1 : Create Another Main div](#todo-1--create-another-main-div)
     - [TODO 2 : Create a Professional Content div](#todo-2--create-a-professional-content-div)
     - [TODO 3 : Add HTML Elements](#todo-3--add-html-elements)
     - [TODO 4 : Style Your New Section with CSS](#todo-4--style-your-new-section-with-css)
@@ -30,7 +30,7 @@ That's it! You're ready to make your website swanky.
 ---
 ## Lesson Steps
 
-### TODO 1: Create Another Container div
+### TODO 1: Create Another Main div
 First, find the <main> tag in the HTML of your `index.html` file. It should look something like this:
 ```HTML
     <main>
@@ -53,20 +53,20 @@ First, find the <main> tag in the HTML of your `index.html` file. It should look
         </div>
     </main>
 ```
-Once you've found it, we're going to create a *new* main right beneath it. Right below the closing `</main>` tag, create a new `<main>` with the class `container2` like so:
+Once you've found it, we're going to create a *new* main right beneath it. Right below the closing `</main>` tag, create a new `<main>` with the class `main2` like so:
 
 ```HTML
-<main class="container2">
+<main class="main2">
   
 </main>
 ```
 
 ### TODO 2: Create a Professional Content div
-Awesome! Now that you've created your container div, we're going to create another div that will hold the information for your professional interests. 
+Awesome! Now that you've created your main2 div, we're going to create another div that will hold the information for your professional interests. 
 
-Inside the `container2` div, create another `<div>` with the class `professional-content` like so:
+Inside the `main2` div, create another `<div>` with the class `professional-content` like so:
 ```HTML
-<main class="container2">
+<main class="main2">
   <div class="professional-content">
   
   </div>
@@ -82,7 +82,7 @@ Now, the fun begins. We've structured out our divs, so now it's time to add some
 
 Your end result should look something like this (don't copy this code, just use as a reference):
 ```HTML
-<div class="container2">
+<div class="main2">
     <div class="professional-content">
         <header>Professional Interests</header>
         <section class="interests">
@@ -98,10 +98,10 @@ Your end result should look something like this (don't copy this code, just use 
 ```
 
 ### TODO 4: Style Your New Section with CSS
-Now that your elements are created, it's time to add some styling to them in CSS. The container div that you just created should have all of the exact same styling rules as the first container div.
+Now that your elements are created, it's time to add some styling to them in CSS. The main div that you just created should have all of the exact same styling rules as the first main div.
 
 1. Find the CSS selector for the original`<main>` and any sub-elements
-2. Create a new selector for the `class="container2"` `<main>` and all it's sub-elements
+2. Create a new selector for the `class="main2"` `<main>` and all it's sub-elements
 3. Mimic the style rules from the first main so that the new section we created looks just like it!
 
 ### TODO 5: Import jQuery
