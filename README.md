@@ -11,10 +11,9 @@ Using jQuery to add interactivity to your first-website project.
     - [TODO 1 : Create Another Main div](#todo-1--create-another-main-div)
     - [TODO 2 : Create a Professional Content div](#todo-2--create-a-professional-content-div)
     - [TODO 3 : Add HTML Elements](#todo-3--add-html-elements)
-    - [TODO 4 : Style Your New Section with CSS](#todo-4--style-your-new-section-with-css)
-    - [TODO 5 : Import jQuery](#todo-5--import-jQuery)
-    - [TODO 6 : Create a jQuery Function for Your Button](#todo-6--create-a-jQuery-Function-for-your-button)
-    - [TODO 7 : Commit and Push Your Changes to Github](#todo-14--go-live)
+    - [TODO 4 : Import jQuery](#todo-4--import-jQuery)
+    - [TODO 5 : Create a jQuery Function for Your Button](#todo-5--create-a-jQuery-Function-for-your-button)
+    - [TODO 6 : Commit and Push Your Changes to Github](#todo-14--go-live)
 
 ---
 ## Setup
@@ -53,27 +52,29 @@ First, find the <main> tag in the HTML of your `index.html` file. It should look
         </div>
     </main>
 ```
-Once you've found it, we're going to create a *new* main right beneath it. Right below the closing `</main>` tag, create a new `<main>` with the class `main2` like so:
+Once you've found it, we're going to create a *new* main right beneath it. Right below the closing `</main>` tag, create a new `<main>` like so:
 
 ```HTML
-<main class="main2">
+<main>
   
 </main>
 ```
 
-### TODO 2: Create a Professional Content div
-Awesome! Now that you've created your main2 div, we're going to create another div that will hold the information for your professional interests. 
+### TODO 2: Create a new Content div
+Awesome! Now that you've created your second main div, we're going to create another div that will hold the information for your professional interests. 
 
-Inside the `main2` div, create another `<div>` with the class `professional-content` like so:
+Inside the new `main` tag, create another `<div>` with the class `content` like so:
 ```HTML
-<main class="main2">
-  <div class="professional-content">
+<main>
+  <div class="content">
   
   </div>
 </main>
 ```
+This will create a new element that can use the styling from your old "content" div. 
+
 ### TODO 3: Add HTML Elements
-Now, the fun begins. We've structured out our divs, so now it's time to add some content. Add the following to your `professional-content` div:
+Now, the fun begins. We've structured out our divs, so now it's time to add some content. Add the following to your new `content` div:
 
 1. Create a `<header>` tag that will read `Professional Interests`
 2. Create a `<section>` tag with the class `interests`
@@ -82,8 +83,8 @@ Now, the fun begins. We've structured out our divs, so now it's time to add some
 
 Your end result should look something like this (don't copy this code, just use as a reference):
 ```HTML
-<div class="main2">
-    <div class="professional-content">
+<div>
+    <div class="content">
         <header>Professional Interests</header>
         <section class="interests">
             <button>Use me to see my professional interests</button>
@@ -97,20 +98,13 @@ Your end result should look something like this (don't copy this code, just use 
 </div>
 ```
 
-### TODO 4: Style Your New Section with CSS
-Now that your elements are created, it's time to add some styling to them in CSS. The main div that you just created should have all of the exact same styling rules as the first main div.
-
-1. Find the CSS selector for the original`<main>` and any sub-elements
-2. Create a new selector for the `class="main2"` `<main>` and all it's sub-elements
-3. Mimic the style rules from the first main so that the new section we created looks just like it!
-
-### TODO 5: Import jQuery
+### TODO 4: Import jQuery
 Now that we've created our HTML elements, it's time to start adding some jQuery to our page.
 First, import the jQuery library by pasting the following code into your `<head>` tag, underneath the closing `</style>` tag:
  ```HTML
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 ```
-### TODO 6: Create a jQuery Function for Your Button
+### TODO 5: Create a jQuery Function for Your Button
 Now let's add some interactivity to the button we created in our HTML Code.
 1. First, create another `<script>` tag, underneath the jQuery library source, like so:
 ```HTML
@@ -150,7 +144,7 @@ In this example, once the button is clicked, the list of interests will appear o
         </script>
   ```
   Now you've done it! You've created an awesome, upgraded first-website!
-### TODO 7: Commit and Push Your Changes to Github
+### TODO 6: Commit and Push Your Changes to Github
 Enter the following commands, and be careful to place your spaces correctly and press `ENTER` after each one. Read the results of each command and check for errors.
 
 First, add all the files we worked into git so that they can be archived in our source control:
