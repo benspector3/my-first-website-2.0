@@ -83,7 +83,7 @@ Now, the fun begins. We've structured out our divs, so now it's time to add some
 
 Your end result should look something like this (don't copy this code, just use as a reference):
 ```HTML
-<div>
+<main>
     <div class="content">
         <header>Professional Interests</header>
         <section class="interests">
@@ -95,7 +95,7 @@ Your end result should look something like this (don't copy this code, just use 
             </ul>
         </section>
     </div>
-</div>
+</main>
 ```
 
 ### TODO 4: Import jQuery
