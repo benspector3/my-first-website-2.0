@@ -30,7 +30,7 @@ That's it! You're ready to make your website swanky.
 ## Lesson Steps
 
 ### TODO 1: Create Another Main div
-First, find the <main> tag in the HTML of your `index.html` file. It should look something like this:
+First, find the `<main>` tag in the HTML of your `index.html` file. This is what mine looks like:
 ```HTML
     <main>
         <div class="sidebar">
